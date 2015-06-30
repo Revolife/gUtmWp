@@ -1,5 +1,5 @@
 # gUtmWp
-determine the Google UTM (Urchin Tracking Module) tails
+Determine the Google UTM (Urchin Tracking Module) tails - wordpress plugin
 
 
 ## Info

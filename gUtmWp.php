@@ -8,7 +8,7 @@
 /*
 Plugin Name: Google UTM WP
 Plugin URI: https://github.com/Revolife/gUtmWp
-Description: determine the Google UTM (Urchin Tracking Module) tails.
+Description: Determine the Google UTM (Urchin Tracking Module) tails.
 Version: 1.0
 Author: Grom
 Author URI: https://revolife.com
