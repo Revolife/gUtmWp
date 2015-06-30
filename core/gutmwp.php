@@ -6,7 +6,7 @@ class gUtmWp{
 	}
 
 	private static function bindWpActions(){
-		add_action('wp_head',[ 'gUTM', 'init']);
+		add_action('send_headers',[ 'gUTM', 'init']);
 	}
 
 	private static function bindWpFilters(){
@@ -30,3 +30,4 @@ class gUtmWp{
 		return str_replace('[gUTM]',$replace,$message);
 	}
 }
+?>

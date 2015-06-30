@@ -18,7 +18,8 @@ License: GPL2
 defined('DS') or define('DS',DIRECTORY_SEPARATOR);
 defined('gUtmpWp_PLUG_PATH') or define('gUtmpWp_PLUG_PATH',dirname(__FILE__));
 
-require_once(gUtmpWp_PLUG_PATH.DS.'core'.DS.'classes'.DS.'gutm.php');
+require_once(gUtmpWp_PLUG_PATH.DS.'core'.DS.'gutm.php');
 require_once(gUtmpWp_PLUG_PATH.DS.'core'.DS.'gutmwp.php');
 
 gUtmWp::start();
+?>

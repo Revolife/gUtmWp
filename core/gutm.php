@@ -49,11 +49,11 @@ class gUTM {
 	}
 
 	/**
-	 * get UTM history from clien cookies
+	 * get UTM history from client cookies
 	 */
 	private static function _getUtmHistory(){
 		if( !empty($_COOKIE['gUTM_COOKIE']) )
-			self::$UTMHistory = (array)json_decode($_COOKIE['gUTM_COOKIE'], true);
+			self::$UTMHistory = json_decode(stripslashes($_COOKIE['gUTM_COOKIE']), true);
 	}
 
 	/**
@@ -90,6 +90,7 @@ class gUTM {
 	 * @return array|bool
 	 */
 	public static function getAllUtmHistory(){
+		self::_getUtmHistory();
 		return empty(self::$UTMHistory) ? false : self::$UTMHistory ;
 	}
 
@@ -100,6 +101,7 @@ class gUTM {
 	 * @return bool|mixed
 	 */
 	private static function _getUtmConversion($param = false, $last = true){
+		self::_getUtmHistory();
 		if(empty(self::$UTMHistory)) return false;
 		$utm = $last ? end(self::$UTMHistory) : reset(self::$UTMHistory);
 		return (empty($param) || !in_array($param,array_keys(self::$UTM))) ? $utm : $utm[$param];
