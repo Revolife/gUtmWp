@@ -12,10 +12,10 @@ determine the Google UTM (Urchin Tracking Module) tails
 
 ## Usage
 in email template, type the following: [gUTM]  
-and in email letter you get:  
-| utm_source : development     
-| utm_medium : shared  
+and in the email you will receive information about the latest UTM-tail:  
+| utm_source :     
+| utm_medium :  
 | utm_term :  
 | utm_content :  
-| utm_campaign : test  
-| date : 30.06.2015 15:07:27  
+| utm_campaign :  
+| date :    
